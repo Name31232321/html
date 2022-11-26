@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        li{
+            display: inline-block;
+            padding: 15px;
+            font-size: 20px;
+        }
+        li:hover{
+            background-color: greenyellow;
+            transition: all 0.5s;
+            color: white;
+        }
+        .a_box{
+            margin: 20px;
+            display:inline-block;
+        }
+        .line{
+            text-align: center;
+        }
+        p::after{
+            content: "]";
+            color: gray;
+        }
+        p::before{
+            color:gray;
+            content: "[";
+        }
+    </style>
+<body>
+    <h1>강아지 종류</h1>
+    <ul>
+        <li>요쿠사테리어</li>
+        <li>치와와</li>
+        <li>푸들</li>
+        <li>포메라니안</li>
+    </ul>
+    <div class="a_box">
+        <img src="요쿠사테링어.jpg" width="200px">
+        <div class="line">
+            <strong>요쿠사테리어</strong>
+            <p>테링어</p>
+        </div>
+    </div>
+    <div class="a_box">
+        <img src="치와와.jpg" height="220px">
+        <div class="line">
+            <strong>치와와</strong>
+            <p>치치</p>
+        </div>
+    </div>
+    <div class="a_box">
+        <img src="푸들.jpg"height="220px">
+        <div class="line">
+            <strong>푸들</strong>
+            <p>들푸</p>
+        </div>
+    </div>
+    <div class="a_box">
+        <img src="포메라니안.png"height="220px">
+        <div class="line">
+            <strong>포메라니안</strong>
+            <p>포안</p>
+        </div>
+    </div>
+</body>
+</html>

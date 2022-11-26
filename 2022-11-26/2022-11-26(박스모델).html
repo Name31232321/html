@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            display:inline-block;
+        }
+        .a_box{
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+        }
+        .b_box{
+            border: solid black 5px;
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+        }
+        .line{
+            text-align: center;
+        }
+        .c_box{
+            padding: 50px;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+        }
+        .d_box{
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+        .e_box{
+            margin: 50px;
+            background-color: orange;
+            width: 200px;
+            height: 200px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>박스모델에 대해 알아보자</h1>
+    <h3>(너비와 높이는 모두 200px로 고정)</h3>
+    <div class="boxes">
+        <div class="a_box">200x200</div>
+        <div>width: 200px, height: 200px</div>
+    </div>
+    <div class="boxes">
+        <div class="b_box">210x210</div>
+        <div class="line">Border 5px 있음</div>
+    </div>
+    <div class="boxes">
+        <div class="c_box">300x300</div>
+        <div class="line">padding 50px 있음</div>
+    </div>
+    <div class="boxes">
+        <div class="d_box">200x200</div>
+        <div>padding 있음. box-sizing: border-box</div>
+    </div>
+    <div class="boxes">
+        <div class="e_box">200x200</div>
+        <div class="line">Margin 있음</div>
+    </div>
+</body>
+</html>
