@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin:20px 0 0 50px;
+        }
+        .circle{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin: 25px;
+        }
+        .a_cir{
+            background-color: #60d4c8;
+        }
+        .b_cir{
+            background-color: #46baaf;
+        }
+        .c_cir{
+            background-color: #3ea69b;
+        }
+        .d_cir{
+            background-color: #205853;
+        }
+        .e_cir{
+            background-color: #0c443f;
+        }
+        .circle:hover, .circle:hover~div {
+            transform: scale(2.0);
+            transition: all 0.5s ease;
+        }
+        .circle2{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin: 25px;
+        }
+        .a_cir2{
+            background-color: #ffe5ad;
+        }
+        .b_cir2{
+            background-color: #e0bb69;
+        }
+        .c_cir2{
+            background-color: #997d40;
+        }
+        .d_cir2{
+            background-color: #866a2e;
+        }
+        .e_cir2{
+            background-color: #725820;
+        }
+        .circle2:hover, .circle2:hover~div{
+            transition: all 0.5s ease;
+            transform: translate(20px , 20px);
+        }
+        .square{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin: 25px;
+        }
+        .a_squ{
+            background-color: #adaef8;
+        }
+        .b_squ{
+            background-color: #6b8cf8;
+        }
+        .c_squ{
+            background-color: #366bce;
+        }
+        .d_squ{
+            background-color: #3b45b3;
+        }
+        .e_squ{
+            background-color: #210f8a;
+        }
+        .square:hover, .square:hover~div{
+            transform: rotate(360deg);
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="circle a_cir"></div>
+            <div class="circle b_cir"></div>
+            <div class="circle c_cir"></div>
+            <div class="circle d_cir"></div>
+            <div class="circle e_cir"></div>
+        </div>
+        <div>
+            <div class="circle2 a_cir2"></div>
+            <div class="circle2 b_cir2"></div>
+            <div class="circle2 c_cir2"></div>
+            <div class="circle2 d_cir2"></div>
+            <div class="circle2 e_cir2"></div>
+        </div>
+        <div>
+            <div class="square a_squ"></div>
+            <div class="square b_squ"></div>
+            <div class="square c_squ"></div>
+            <div class="square d_squ"></div>
+            <div class="square e_squ"></div>
+        </div>
+    </div>
+
+</body>
+</html>
