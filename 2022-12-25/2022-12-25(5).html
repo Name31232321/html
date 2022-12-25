@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            user-select: none;
+            text-align: center;
+        }
+        h1::before{
+            content: "원래";
+            color: crimson;
+        }
+        h1::after{
+            content: "이런 값";
+            color: dodgerblue;
+        }
+        h1:hover::before{
+            content: "이게";
+            color: fuchsia;
+        }
+        h1:hover::after{
+            content: "이렇게";
+            color: darkslategray;
+        }
+        h1:active::before{
+            content: "바뀌게";
+            color: purple;
+        }
+        h1:active::after{
+            content: "되었습니다";
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1> </h1>
+</body>
+</html>

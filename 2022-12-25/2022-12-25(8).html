@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            height: 300px;
+        }
+        div{
+            display: inline-block;
+            margin: 10px 0;
+            border: 1px solid black;
+            cursor:pointer;
+        }
+        div::before{
+            content: "마우스를 대면 뭔가 바뀝니다.";
+        }
+        div:hover{
+            background-color: black;
+            color: white;
+
+        }
+        div:hover::before{
+            content: "마우스를 클릭하면 또 바뀝니다.";
+        }
+        div:hover + table{
+            transform:translate(0, 0) scale(1, 1);
+        }
+        div:active + table{
+            transform:translate(0, 0) scale(1, 1) rotate(360deg);
+        }
+        div, table{
+            width: 500px;
+            transition: all 0.5s;
+        }
+        table{
+            display: inline-table;
+            border-collapse: collapse;
+            transform: translate(-50%, 0) scale(0, 1);
+            position: absolute;
+            left: 620px;
+            top: 60px;
+        }
+        tr, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        div:active::before{
+            content: "이제 안바뀝니다.";
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+<table>
+    <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>정보</th>
+    </tr>
+    <tr>
+        <td>홍길동</td>
+        <td>16</td>
+        <td>동에번쩍 서에번쩍</td>
+    </tr>
+    <tr>
+        <td>영희</td>
+        <td>16</td>
+        <td>철수에게 공을 100m/s로 던진다.</td>
+    </tr>
+    <tr>
+        <td>철수</td>
+        <td>16</td>
+        <td>이 때, 철수를 구하시오.</td>
+    </tr>
+</table>
+</body>
+</html>
