@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            display: inline-block;
+            border: 1px solid black;
+        }
+        .box{
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+            display: inline-block;
+            margin: 4px;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .yellow{
+            background-color: yellow;
+            left: 40px;
+            top: 40px;
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+        }
+        .fixed{
+            position: fixed;
+        }
+        .sticky{
+            position: sticky;
+        } 
+        .parent{
+            position: relative;
+            height: 200px;
+        }
+        .box{
+            position: absolute;
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+        }
+        .box:nth-child(1){
+            left: 10px;
+            top: 10px;
+            z-index: 10;
+            background-color: yellow;
+        }
+        .box:nth-child(2){
+            left: 20px;
+            top: 20px;
+            z-index: 1;
+            background-color: blue;
+        }
+        .container{
+            border: 1px solid black;
+            width: 300px;
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            border: 4px solid black;
+        }
+        .box.inline-block{
+            display: inline-block;
+        }
+        .float{
+            float: left;
+        }
+        .float{
+            width: 40px;
+            height: 40px;
+            border: 4px solid black;
+            float: left;
+        }
+        .middle{
+            clear: left;
+        }*/
+        .nav{
+            height: 40px;
+            background-color: red;
+            color: white
+        }
+        .side{
+            height: 400px;
+            width: 100px;
+            float: left;
+            background-color: blue;
+            color: white;
+        }
+        .main{
+            height: 400px;
+            width: calc(100% - 100px);
+            margin-left: 100px;
+            background-color: green;
+            color: white
+        }
+        .footer{
+            height:40px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        position: static<br>
+            아래 파란박스는 position 속성 설정 안함, 노란색 박스만 position 설정함.
+    <div>
+        <div class="box blue"></div>
+        <div class="box yellow static"></div>
+        <div class="box blue"></div>
+    </div>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    </div>
+    <div class="container">
+        position: relative<br>
+            아래 파란박스는 position 속성 설정 안함, 노란색 박스만 position 설정함.
+    <div>
+        <div class="box blue"></div>
+        <div class="box yellow relative"></div>
+        <div class="box blue"></div>
+    </div>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    </div>
+    <div class="container relative">
+        position: absolute<br>
+            아래 파란박스는 position 속성 설정 안함, 노란색 박스만 position 설정함.
+    <div>
+        <div class="box blue"></div>
+        <div class="box yellow absolute"></div>
+        <div class="box blue"></div>
+    </div>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    </div>
+    <div class="container">
+        position: fixed<br>
+            아래 파란박스는 position 속성 설정 안함, 노란색 박스만 position 설정함.
+    <div>
+        <div class="box blue"></div>
+        <div class="box yellow fixed"></div>
+        <div class="box blue"></div>
+    </div>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    </div>
+    <div class="container">
+        position: sticky<br>
+            아래 파란박스는 position 속성 설정 안함, 노란색 박스만 position 설정함.
+    <div>
+        <div class="box blue"></div>
+        <div class="box yellow sticky"></div>
+        <div class="box blue"></div>
+    </div>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    내용이 많아야 비교가 되니까....<br>
+    </div> 
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container">
+        <div class="box float">
+            float 박스
+        </div>
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+    </div>
+    <div class="container">
+        <div class="box">
+            float 아닌 박스
+        </div>
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+    </div>
+    <div class="container">
+        <div class="box inline-block">
+            inline-block 박스
+        </div>
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용  옆에 내용 
+        </div>
+        <div>
+            <div class="float"></div>
+            <div class="middle">
+                s much mud in the streets as if the waters had but newly retired from the face of the earth, and
+                it would not be wonderful to meet a megalosaurus, forty feet or so, waddling like an elephantine
+                lizard up Holborn Hill.
+            </div>
+        </div>-->
+        <div class="nav">nav</div>
+        <div class="side">side</div>
+        <div class="main">main</div>
+        <div class="footer">footer</div>
+</body>
+</html>

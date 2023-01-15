@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lightgray{
+            background-color: lightgray;
+            width: 150px;
+            padding: 20px;
+        }
+        ul{
+            width: 150px;
+            border: 2px solid black;
+            border-top: 3px solid magenta;
+            height: 200px;
+            list-style-type : circle;
+            /* position: absolute; */
+            left: 190px;
+            top: -15px;
+        }
+        .lightgray:hover{
+            color: #808080;
+            cursor: pointer;
+        }
+        .lightgray:hover ul {
+            display: block;
+            border: 5px solid red;
+        }
+        .text{
+            padding: 20px;
+        }
+        .relative{
+            position: relative;
+        }
+        .ul:hover .test{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">
+        <div class="lightgray">학교소개</div>
+        <div class="lightgray">학과소개</div>
+        <div class="lightgray">입학안내</div>
+        <ul>
+            <li class="text">이사장인사말</li>
+            <li class="text">학교장인사말</li>
+            <li class="text">학교연혁</li>
+        </ul>
+        <div class="test">asdf</div>
+    </div>
+</body>
+</html>
