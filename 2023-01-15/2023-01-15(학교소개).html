@@ -6,28 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .lightgray{
+        .lightgray1{
             background-color: lightgray;
             width: 150px;
             padding: 20px;
         }
-        ul{
+        .lightgray2{
+            background-color: lightgray;
+            width: 150px;
+            padding: 20px;
+        }
+        .lightgray3{
+            background-color: lightgray;
+            width: 150px;
+            padding: 20px;
+        }
+        .ul1 {
             width: 150px;
             border: 2px solid black;
             border-top: 3px solid magenta;
             height: 200px;
             list-style-type : circle;
-            /* position: absolute; */
+            position: absolute;
             left: 190px;
             top: -15px;
+            display: none;
         }
-        .lightgray:hover{
+        .ul2{
+            width: 150px;
+            border: 2px solid black;
+            border-top: 3px solid magenta;
+            height: 280px;
+            list-style-type : circle;
+            position: absolute;
+            left: 190px;
+            top: -15px;
+            display: none;
+        }
+        .ul3{
+            width: 150px;
+            border: 2px solid black;
+            border-top: 3px solid magenta;
+            height: 200px;
+            list-style-type : circle;
+            position: absolute;
+            left: 190px;
+            top: -15px;
+            display: none;
+        }
+        .cur:hover{
             color: #808080;
             cursor: pointer;
         }
-        .lightgray:hover ul {
+        .lightgray1:hover~ .ul1 {
             display: block;
-            border: 5px solid red;
         }
         .text{
             padding: 20px;
@@ -35,22 +67,35 @@
         .relative{
             position: relative;
         }
-        .ul:hover .test{
-            color: red;
+        .lightgray2:hover~ .ul2{
+            display: block;
+        }
+        .lightgray3:hover~ .ul3{
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="relative">
-        <div class="lightgray">학교소개</div>
-        <div class="lightgray">학과소개</div>
-        <div class="lightgray">입학안내</div>
-        <ul>
+        <div class="lightgray1 cur">학교소개</div>
+        <div class="lightgray2 cur">학과소개</div>
+        <div class="lightgray3 cur">입학안내</div>
+        <ul class="ul1">
             <li class="text">이사장인사말</li>
             <li class="text">학교장인사말</li>
             <li class="text">학교연혁</li>
         </ul>
-        <div class="test">asdf</div>
+        <ul class="ul2">
+            <li class="text">E-비지니스과</li>
+            <li class="text">디지털콘텐츠과</li>
+            <li class="text">웹프로그래밍과</li>
+            <li class="text">해킹방어과</li>
+        </ul>
+        <ul class="ul3">
+            <li class="text">학교소개책자</li>
+            <li class="text">입학공지사항</li>
+            <li class="text">모집요강</li>
+        </ul>
     </div>
 </body>
 </html>
