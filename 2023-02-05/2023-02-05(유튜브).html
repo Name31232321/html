@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+        }
+        .nav{
+            height: 5vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .side{
+            width: 15vw;
+            background-color: white;
+            height: 88vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .main{
+            width: 85vw;
+            height: 88vh;
+            background-color: lightgray;
+        }
+        .footer{
+            height: 7vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .line1{
+            border-bottom: solid 1px gray;
+            font-size: 22px;
+        }
+        .line2{
+            border-bottom: solid 1px gray;
+            font-size: 22px;
+        }
+        .line3{
+            border-bottom: solid 1px gray;
+            font-size: 22px;
+        }
+        .line1 > div{
+            padding: 15px;
+            transition: all ease 1s;
+        }
+        .line2 > div{
+            padding: 15px;
+            transition: all ease 1s;
+        }
+        .line3 > div{
+            padding: 15px;
+            transition: all ease 1s;
+        }
+        .line1 > div:hover{
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        .line2 > div:hover{
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        .line3 > div:hover{
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <div>메뉴</div>
+        <div>유튜브</div>
+        <div>검색하기</div>
+        <div>검색</div>
+        <div>영상 올리기</div>
+        <div>메뉴2</div>
+        <div>설정</div>
+        <div>로그인</div>
+    </div>
+    <div class="container">
+        <div class="side">
+            <div class="line1">
+                <div>홈</div>
+                <div>인기</div>
+                <div>구독</div>
+            </div>
+            <div class="line2">
+                <div>보관함</div>
+                <div>시청기록</div>
+                <div>내 동영상</div>
+            </div>
+            <div class="line3">
+                <div>나중에 볼 동영상</div>
+                <div>좋아요를 표시한 동영상</div>
+                <div>더보기...</div>
+            </div>
+        </div>
+        <div class="main"></div>
+    </div>
+    <div class="footer">
+        <div>약관개인정보처리방침정책 및 안전YouTube 작도의 원리새로운 기능 테스트하기</div>
+        <div>2021 Google LLC CEO: 선다 피차이 주소: 1600 Amphitheatre Parkway, Mountain View CA 94043, USA. 전화: 080-822-1450(무료)</div>
+    </div>
+</body>
+</html>
