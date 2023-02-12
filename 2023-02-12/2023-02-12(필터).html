@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        img{
+            width: 300px;
+            padding: 25px;
+            transition: all ease 1s;
+        }
+        h1{
+            filter: drop-shadow(5px 5px 3px gray);
+        }
+        .dog:hover{
+            width: 600px;
+            filter: brightness(50%);
+            filter: opacity(100%);
+        }
+        .dog:active{
+            filter: opacity(25%);
+        }
+        .cat:hover{
+            filter: drop-shadow(0 0 0) hue-rotate(90deg);
+            transform: rotate(360deg);
+            width: 600px;
+        }
+        .cat:active{
+            filter: drop-shadow(10px 10px 10px red) hue-rotate(90deg);
+        }
+        .pikachu:hover{
+            width: 600px;
+            filter:  blur(0px) invert(100%);
+        }
+        .pikachu:active{
+            filter: blur(5px) invert(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>마우스를 올려보고 클릭해보세요</h1>
+        <div>
+            <img class="dog" src="./Pomeranian.png">
+            <img class="cat" src="./white_hair_cat_grooming.png">
+            <img class="pikachu" src="./DALL·E 2023-02-12 11.34.11 - a Pikachu playing volleyball, 3D, disney style.png">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 400px;
+            margin: 20px;
+        }
+        h1{
+            text-align: center;
+            color: red;
+            filter: drop-shadow(3px 2px 1px gray);
+        }
+        .opacity:active{
+            filter: opacity(50%);
+        }
+        .brightness:active{
+            filter: brightness(150%);
+        }
+        .invert:active{
+            filter: invert(100%);
+        }
+        .contrast:active{
+            filter: contrast(2);
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS filter를 배워보자!</h1>
+    <div class="container">
+        <div><img class="opacity" src="./Pomeranian.png">
+            <h4>투명하게</h4>
+        </div>
+
+        <div><img class="brightness" src="./Pomeranian.png">
+            <h4>밝게</h4>
+        </div>
+
+        <div><img class="invert" src="./Pomeranian.png">
+            <h4>반전</h4>
+        </div>
+        <div><img class="contrast" src="./Pomeranian.png">
+            <h4>대비</h4>
+        </div>
+    </div>
+</body>
+</html>
