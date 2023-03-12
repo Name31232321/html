@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            transition: all ease 0.4s;
+            padding: 10px;
+        }
+        h2:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        #red{
+            background-color: red;
+            color: white;
+        }
+        #blue{
+            background-color: blue;
+            color: white;
+        }
+        #green{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>아래 글자를 클릭해봐!</h1>
+    <h2 onclick="this.id=prompt('red, green, blue 중에서 글자를 써보세요.')"
+    >재미있는 자바스크립트</h2>
+</body>
+</html>
